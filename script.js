@@ -126,3 +126,12 @@ console.log(collect);
 
 var arrange = animals.concat(flowers);
 console.log(arrange);
+
+// Iterating over an array
+for(var i=0; i<= flowers.length-1; i++) {
+    console.log(flowers[i]);
+}
+
+for(var i=0; i<=animals.length-1; i++) {
+    console.log(animals[i]);
+}
