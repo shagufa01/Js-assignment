@@ -135,3 +135,58 @@ for(var i=0; i<= flowers.length-1; i++) {
 for(var i=0; i<=animals.length-1; i++) {
     console.log(animals[i]);
 }
+
+// objects
+
+var employee = {
+   name : "john",
+   age : 22,
+   state : "jharkhand",
+   phoneNumber : 1234567890
+}
+console.log(employee.name); // dot notation
+console.log(employee["state"]); // [] notation
+
+
+var food = {
+     veggies : "healthy",
+     pizza : "unhealthy",
+     beverages : {
+         coke : "unhealthy",
+         juice : "healthy"
+     }
+}
+console.log(food.veggies);
+console.log(food["beverages"]["coke"]);
+   
+var house = {
+    red : "boys",
+    blue : "girls",
+    yellow : ["teachers","parents","kids","judges","anchor"],
+    team : function() {
+        for (i=0;i<=house.yellow.length-1;i++){
+            console.log(house.yellow[i]);
+        }
+    }
+}
+console.log(house.team());
+
+
+
+var student = {
+   Name : "Hazel",
+   Age : 20 ,
+   percentage : 95,
+   adrress : {
+       state : "jharkhand",
+       city : "jamshedpur",
+       phNo : 1234567890 
+    },
+   Hobbies : ["painting","coding","binge-watching","singing","horse riding"],
+   listHobbies : function() {
+        for(i=0 ; i<= student.Hobbies.length-1 ; i++) {
+            console.log(student.Hobbies[i]);
+        }
+    } 
+   }
+   console.log(student.listHobbies());
